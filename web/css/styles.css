@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: brown;
+}
+
+span#click {
+  text-decoration: underline;
+  color: blue;
+}
+
+span:hover {
+  cursor: pointer;
+}

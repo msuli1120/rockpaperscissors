@@ -14,3 +14,7 @@ span#click {
 span:hover {
   cursor: pointer;
 }
+
+h3 {
+  color: red;
+}

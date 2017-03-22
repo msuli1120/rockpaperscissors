@@ -54,10 +54,6 @@
         return "Please enter 'rock' 'scissors' or 'paper'.";
       }
 
-
-
-
-
     }
   }
 ?>

@@ -14,10 +14,10 @@
   });
 
   $app->post("/play", function() use ($app) {
-    $new_game = new Play;
-    $result = $new_game->playGame($_POST['player1'],$_POST['player2']);
+      $new_game = new Play;
+      $result = $new_game->playGame($_POST['player1'],$_POST['player2']);
 
-    return $app['twig']->render('index.html.twig', array('result'=>$result));
+      return $app['twig']->render('index.html.twig', array('result'=>$result));
   });
 
   $app->post("/playpc", function() use ($app) {

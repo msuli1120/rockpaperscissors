@@ -10,7 +10,9 @@
       $one = strtolower($input_one);
       $two = strtolower($input_two);
 
-      if(($one === $player_one[0])&&($two === $player_two[1])){
+      if(empty($one) && empty($two)) {
+        return "Please fill out the blanks!";
+      }elseif (($one === $player_one[0])&&($two === $player_two[1])){
         return "Player 1 wins! Player 1: " . $one . ". Player 2: " . $two . ".";
       } elseif (($two === $player_two[0])&&($one === $player_one[1])) {
         return "Player 2 wins! Player 1: " . $one . ". Player 2: " . $two . ".";
